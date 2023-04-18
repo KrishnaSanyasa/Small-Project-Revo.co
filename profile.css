@@ -1,0 +1,65 @@
+
+*{
+    margin: 5px;
+    padding: 0;
+    box-sizing: content-box;
+}
+
+body {
+    background: darkblue;
+    font-family: Arial;
+    font-size: 20px;
+}
+
+.logo{
+    color: white;
+    font-size: 50px;
+
+}
+
+.logo span{
+    color: red;
+}
+
+.mytabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 25px;
+    
+}
+.mytabs input[type="radio"] {
+    display: none;
+}
+.mytabs label {
+    padding: 15px;
+    background: rgb(80, 80, 248);
+    font-weight: bold;
+    border-radius: 15px;
+    
+    
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background: rgb(80, 80, 248);
+    order: 1;
+    display: none;
+    object-position: 50%;
+    border-radius: 20px;
+    
+    
+}
+.mytabs .tab h2 {
+    font-size: 2cm;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type="radio"]:checked + label {
+    background: rgb(197, 194, 241);
+}
